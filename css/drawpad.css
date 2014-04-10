@@ -1,0 +1,110 @@
+body {
+    background: #333;
+    color: #fff;
+    margin: 0px;
+    font: 300 100.1% "Helvetica Neue", Helvetica, "Arial Unicode MS", Arial, sans-serif;
+}
+
+#toolbox {
+	float:left;
+	margin:0px;
+	margin-top: 1px;
+}
+
+#drawarea {
+    border: 1px solid black;
+    background: white;
+    float: left;
+    position: fixed;
+    right: 240px;
+    left: 47px;
+    top: 40px;
+    bottom: 5px;
+    margin-left: .4em;
+}
+
+#settings {
+	float:right;
+	margin-left:15px;
+	margin-right:10px;
+	width:220px;
+}
+
+.ck-slider {
+	width: 200px;
+	height: 5px;
+	margin-bottom: 10px;
+}
+
+.ck-line-label {
+	width: 65px;
+	height: 25px;
+	font-size: 12px;
+}
+
+.ui-buttonset .ui-button {
+	margin: 0px;
+	margin-left: 0px;
+	margin-right: -.4em;
+}
+
+.ck-line-st {
+	margin: 0px;
+}
+
+.ui-slider .ui-slider-handle {
+	width: 12px;
+	height: 12px;
+}
+
+.ck-setting-panel {
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+#label-toggle-fill {
+	margin-top: 5px;
+	margin-bottom: 8px;
+	font-size: 12px;
+	width: 65px;
+	height: 25px;
+}
+
+#stroke-width   .ui-slider-range {background: #fff}
+#stroke-color-r .ui-slider-range {background: #a22}
+#stroke-color-g .ui-slider-range {background: #2a2}
+#stroke-color-b .ui-slider-range {background: #22a}
+#fill-color-r .ui-slider-range {background: #a22}
+#fill-color-g .ui-slider-range {background: #2a2}
+#fill-color-b .ui-slider-range {background: #22a}
+
+#stroke-width   .ui.slider-handle {background-color: #fff}
+#stroke-color-r .ui-slider-handle {background-color: #a22}
+#stroke-color-g .ui-slider-handle {background-color: #2a2}
+#stroke-color-b .ui-slider-handle {background-color: #22a}
+#fill-color-r .ui-slider-handle {background-color: #a22}
+#fill-color-g .ui-slider-handle {background-color: #2a2}
+#fill-color-b .ui-slider-handle {background-color: #22a}
+
+#footer {
+	position: fixed;
+	right: 10px;
+	bottom: 15px;
+	width: 220px;
+}
+
+.ainfo {
+	margin-bottom: 15px;
+}
+
+h5 {
+	height: 10px;
+	margin: 0px;
+	text-align: center;
+}
+
+h6 {
+	height: 8px;
+	margin: 4px;
+	text-align: center;
+}

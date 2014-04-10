@@ -1,0 +1,100 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Drawpad</title>
+	<link rel="stylesheet" href="css/jquery-ui.css"/>
+	<script src="js/jquery-2.0.3.js"></script>
+	<script src="js/jquery-ui-1.10.3.js"></script>
+	<script src="js/raphael.js"></script>
+	<script src="js/raphael.export.js"></script>
+	<script src="js/raphael.import.js"></script>
+	<link rel="stylesheet" href="css/drawpad.css"/>
+</head>
+<body id="drawpad">
+
+<div>
+
+<div id="topbar">
+	<button id="bt_new">New</button>
+	<button id="bt_open">Open</button>
+	<button id="bt_save">Save</button>
+	<button id="bt_save_as">Save As</button>
+	<button id="bt_undo">Undo</button>
+	<button id="bt_redo">Redo</button>
+</div>
+
+<div id="toolbox">
+	<div><input type="radio" id="select"  name="toolbutton"/><label for="select"><img src="img/select.png"/></label></div>
+	<div><input type="radio" id="pencil"  name="toolbutton"/><label for="pencil"><img src="img/pencil.png"/></label></div>
+	<div><input type="radio" id="curve"   name="toolbutton"/><label for="curve"><img src="img/curve.png"/></label></div>
+	<div><input type="radio" id="rect"    name="toolbutton"/><label for="rect"><img src="img/rectangle.png"/></label></div>
+	<div><input type="radio" id="ellipse" name="toolbutton"/><label for="ellipse"><img src="img/ellipse.png"/></label></div>
+	<div><input type="radio" id="polygon" name="toolbutton"/><label for="polygon"><img src="img/polygon.png"/></label></div>
+	<div><input type="radio" id="star"    name="toolbutton"/><label for="star"><img src="img/star.png"/></label></div>
+	<div><input type="radio" id="text"    name="toolbutton"/><label for="text"><img src="img/text.png"/></label></div>
+</div>
+
+<div id="dialog-get-text" title="Input the text">
+<label for="tdata">Text:</label>
+<input type="text" name="tdata" id="tdata"/>
+</div>
+
+<div id="drawarea"></div>
+
+<div id="settings">
+	<label id="label-line-join">Line Join:</label>
+	<div class="ck-setting-panel ck-line-st" id="line-join-st">
+		<input class="ck-line-radio" type="radio" id="line-join-bevel" name="linejoin"/><label class="ck-line-label" for="line-join-bevel">Bevel</label>
+		<input class="ck-line-radio" type="radio" id="line-join-round" name="linejoin" checked="checked"/><label class="ck-line-label" for="line-join-round">Round</label>
+		<input class="ck-line-radio" type="radio" id="line-join-miter" name="linejoin"/><label class="ck-line-label" for="line-join-miter">Miter</label>
+	</div>
+
+	<label id="label-line-cap">Line Cap:</label>
+	<div class="ck-setting-panel ck-line-st" id="line-cap-st">
+		<input class="ck-line-radio" type="radio" id="line-cap-butt" name="linecap"/><label class="ck-line-label" for="line-cap-butt">Butt</label>
+		<input class="ck-line-radio" type="radio" id="line-cap-square" name="linecap"/><label class="ck-line-label" for="line-cap-square">Square</label>
+		<input class="ck-line-radio" type="radio" id="line-cap-round" name="linecap" checked="checked"/><label class="ck-line-label" for="line-cap-round">Round</label>
+	</div>
+
+	<label id="label-stroke-width">Line Width:</label>
+	<div class="ck-setting-panel ck-slider" id="stroke-width"></div>
+	
+	<label id="lable-stroke-color">Stroke Color:</label>
+	<div class="ck-setting-panel" id="stroke-color">
+		<div class="ck-slider" id="stroke-color-r"></div>
+		<div class="ck-slider" id="stroke-color-g"></div>
+		<div class="ck-slider" id="stroke-color-b"></div>
+	</div>
+
+	<input type="checkbox" id="toggle-fill" checked="checked"/><label id="label-toggle-fill" for="toggle-fill"></label>
+	<div class="ck-setting-panel" id="fill-color">
+		<div class="ck-slider" id="fill-color-r"></div>
+		<div class="ck-slider" id="fill-color-g"></div>
+		<div class="ck-slider" id="fill-color-b"></div>
+	</div>
+</div>
+
+
+<div id="footer">
+	<div class="ainfo" id="aname">
+	<h5>Drawpad v0.95</h5>
+	</div>
+	<div class="ainfo" id="exlib">
+	<h5>External Library</h5>
+	<h6>jquery-2.0.3.js</h6>
+	<h6>jquery-ui-1.10.3.js</h6>
+	<h6>raphael.js</h6>
+	<h6>raphael.export.js</h6>
+	<h6>raphael.import.js</h6>
+	</div>
+	<div class="ainfo" id="acp">
+	<h5>Copyright © 2013 ck.Lux</h6>
+	</div>
+</div>
+</div>
+
+<script src="state.js"></script>
+</body>
+</html>

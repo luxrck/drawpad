@@ -1,0 +1,26 @@
+{
+	"name": "drawpad",
+	"description": "A simple draw pad.",
+	"manifest_version": 2,
+	"minimum_chrome_version": "23",
+	"version": "0.95",
+	"offline_enabled": true,
+	"app": {
+		"background": {
+			"scripts": ["state.js","main.js"]
+	    }
+	},
+	"permissions": [
+		{"fileSystem": ["write", "retainEntries", "directory"]},
+		"storage",
+		"syncFileSystem"
+    ],
+	"file_handlers": {
+		"text": {
+			"types": ["image/svg+xml"],
+			"title": "Drawpad"
+		}
+	},
+	"icons": {
+	}
+}
